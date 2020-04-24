@@ -11,9 +11,12 @@
             </a-assets>
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
-                <!-- Using the asset management system. -->
-                <a-video src="#video" width="16" height="8" position="0 0 -20"></a-video>
-
+                <!-- raw.githack.com serves raw files directly from GitHub,
+                with proper Content-Type headers -->
+                <!-- first entity: reference to the above glTF model -->
+                <a-entity position="0 -1 0" scale="0.5 0.5 0.5">
+                  <a-video src="#video" width="16" height="9" position="0 0 -20"></a-video>
+                </a-entity>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
