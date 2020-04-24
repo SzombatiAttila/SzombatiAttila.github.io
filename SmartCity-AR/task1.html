@@ -7,16 +7,14 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-                <video id="penguin-sledding" autoplay loop="true" src="penguin-sledding.mp4"></video>
+                    <video id="bartos" autoplay loop="true" src="SmartCity-AR/video/bartos.mp4"></video>
             </a-assets>
+
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
                 <!-- raw.githack.com serves raw files directly from GitHub,
                 with proper Content-Type headers -->
                 <!-- first entity: reference to the above glTF model -->
-                <a-video src="=SmartCity-AR/videos/bartos.mp4"></a-video>
-                <!-- second entity: reference to the above audio -->
-                </a-entity>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
