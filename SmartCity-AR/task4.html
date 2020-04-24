@@ -12,16 +12,12 @@
 
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
-                <!-- raw.githack.com serves raw files directly from GitHub,
-                with proper Content-Type headers -->
-                <!-- first entity: reference to the above glTF model -->
-                <!-- second entity: reference to the above audio -->
+                <a-video
+                    position="0 -1 0"
+                    scale="0.5 0.5 0.5"
+                    >
+                </a-video>
             </a-marker>
-            <a-video
-                position="0 -1 0"
-                scale="0.5 0.5 0.5"
-                >
-            </a-video>
 
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
