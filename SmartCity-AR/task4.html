@@ -7,16 +7,13 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-                <video id="video" autoplay loop="true" src="SmartCity-AR/videos/bartos.mp4"></video>
+                <audio id="videoy" src="SmartCity-AR/videos/bartos.mp4" response-type="arraybuffer" autoplay="true" loop></audio>
             </a-assets>
+
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
-                <!-- raw.githack.com serves raw files directly from GitHub,
-                with proper Content-Type headers -->
-                <!-- first entity: reference to the above glTF model -->
-                <a-entity position="0 -1 0" scale="0.5 0.5 0.5">
-                  <a-video src="#video" width="16" height="9" position="0 0 -20"></a-video>
-                </a-entity>
+                <!-- video beillesztese -->
+                <a-video src="#video" width="16" height="9" position="0 0 -20"></a-video>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
