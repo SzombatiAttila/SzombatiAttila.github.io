@@ -52,15 +52,21 @@
           button.addEventListener("click", function(evt){
             console.log("button clicked")
             if(Video_0.muted==true){
+            if(Video_0.muted==true && Video_1.muted==true){
               button.innerHTML="Pause";
               Video_0.muted=false;
+              Video_1.muted=false;
               Video_0.play();
+              Video_1.play();
             }else{
               button.innerHTML="Play";
               Video_0.muted=true;
+              Video_1.muted=true;
               Video_0.pause();
+              Video_1.pause();
             }
-          });
+          }});
+
 
           // button for full screen
           fullbutton.addEventListener("click",
