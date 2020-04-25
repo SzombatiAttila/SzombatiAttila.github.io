@@ -12,35 +12,35 @@
         {
           var elem = document.documentElement;
           var marker = document.querySelector("#marker");
-          var Video_0 = document.querySelector("#Video_Asset_0");
+          var Video_0 = document.querySelector("#Audio_Asset");
           var button = document.querySelector("#mutebutton");
           button.hidden = true;
-          Audio_Asset.pause();
+          Audio.pause();
 
           marker.addEventListener("markerFound", function (evt) {
             markerFound = 1;
             button.hidden = false;
-            Audio_Asset.play();  // if you want the audio
+            Audio.play();  // if you want the audio
             // to start immediently on marker detection, uncomment this
           });
 
           marker.addEventListener("markerLost", function (evt) {
             markerFound = 0;
-            Audio_Asset.pause();
+            Audio.pause();
             button.hidden = true;
           });
 
         // button for video play/pause
           button.addEventListener("click", function(evt){
             console.log("button clicked")
-            if(Audio_Asset.muted==true){
+            if(Audio.muted==true){
               button.innerHTML="Pause";
-              Audio_Asset.muted=false;
-              Audio_Asset.play();
+              Audio.muted=false;
+              Audio.play();
             }else{
               button.innerHTML="Play";
-              Audio_Asset.muted=true;
-              Audio_Asset.pause();
+              Audio.muted=true;
+              Audio.pause();
             }
           });
         },
