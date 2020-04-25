@@ -25,6 +25,7 @@
           marker.addEventListener("markerFound", function (evt) {
             markerFound = 1;
             button.hidden = false;
+            Video_0.muted==false
             Video_0.play();  // if you want the video 
             // to start immediently on marker detection, uncomment this
           });
@@ -32,6 +33,7 @@
           marker_python.addEventListener("markerFound", function (evt) {
             markerFound = 1;
             button.hidden = false;
+            Video_1.muted==false
             Video_1.play();  // if you want the video 
             // to start immediently on marker detection, uncomment this
           });
@@ -51,7 +53,7 @@
           // button for video play/pause
           button.addEventListener("click", function(evt){
             console.log("button clicked")
-            if(Video_0.muted==true && Video_1.muted==false){
+            if(Video_0.muted==true && Video_1.==false){
               button.innerHTML="Pause";
               Video_0.muted=false;
               Video_0.play();
