@@ -51,7 +51,6 @@
           // button for video play/pause
           button.addEventListener("click", function(evt){
             console.log("button clicked")
-            if(Video_0.muted==true){
             if(Video_0.muted==true && Video_1.muted==true){
               button.innerHTML="Pause";
               Video_0.muted=false;
@@ -65,7 +64,7 @@
               Video_0.pause();
               Video_1.pause();
             }
-          }});
+          };
 
 
           // button for full screen
