@@ -32,7 +32,7 @@
           marker2.addEventListener("markerFound", function (evt) {
             markerFound = 1;
             button.hidden = false;
-            Video_0.play();  // if you want the video 
+            Video_1.play();  // if you want the video 
             // to start immediently on marker detection, uncomment this
           });
 
@@ -44,7 +44,7 @@
 
           marker2.addEventListener("markerLost", function (evt) {
             markerFound = 0;
-            Video_0.pause();
+            Video_1.pause();
             button.hidden = true;
           });
 
